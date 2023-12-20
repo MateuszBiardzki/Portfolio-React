@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/me1.png'
 import { FaAward } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { GoProjectRoadmap } from "react-icons/go";
