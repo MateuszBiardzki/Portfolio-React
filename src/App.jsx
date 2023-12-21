@@ -8,21 +8,28 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import { Routes, Route } from 'react-router-dom'
+import { FirstGame } from './pages/FirstGame'
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
-  )
+    <Routes>
+      <Route path='/FirstGame' element={<FirstGame />} />
+      <Route path='/' element={
+        <>
+          <Header />
+          <Nav />
+          <About />
+          <Experience />
+          <Services />
+          <Portfolio />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </>
+      } />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
